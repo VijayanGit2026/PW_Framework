@@ -1,3 +1,5 @@
+import { waitForElement } from "../utils/waitUtils";
+
 export class BaseClass {
 
     constructor(baseValue) {
@@ -5,12 +7,12 @@ export class BaseClass {
     }
 
     async enterText(element, value) {
-        await element.waitFor({ state: "visible" });
+        await waitForElement(element);
         await element.fill(value);
     }
 
     async clickIt(element) {
-        await element.waitFor({ state: "visible" });
+        await waitForElement(element);
         await element.click();
     }
 }

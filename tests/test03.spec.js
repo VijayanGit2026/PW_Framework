@@ -4,6 +4,7 @@ import { expect } from "@playwright/test";
 import userData from "../testData/user.json" with { type: "json" };
 
 import "../Hooks/hooks.js";
+import { logger } from "../utils/loggerUtils";
 
 test("Login, Add Product and Complete Checkout", async ({
   page,
@@ -14,7 +15,7 @@ test("Login, Add Product and Complete Checkout", async ({
   checkoutOverviewPage,
   checkoutCompletePage,
 }) => {
-  console.log("TEST START: Login, Add Product and Complete Checkout");
+  logger("TEST START: Login, Add Product and Complete Checkout");
 
   // 1. LOGIN PAGE
 
@@ -134,7 +135,7 @@ test("Login, Add Product and Complete Checkout", async ({
 
   expect(fileName).toMatch(/\.pdf$/i);
 
-  console.log("PDF downloaded successfully:");
+  logger("PDF downloaded successfully:");
 
-  console.log(downloadPath);
+  logger(downloadPath);
 });

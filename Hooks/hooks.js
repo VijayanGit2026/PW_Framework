@@ -1,15 +1,16 @@
 import { test } from "@playwright/test";
+import { logger } from "../utils/loggerUtils";
 
 test.beforeAll(async () => {
   //Runs once before the test suite.
-  console.log("Suite started");
+  logger("Suite started");
 });
 
 test.beforeEach(async ({ context, page }) => {
   //Runs before every test.
- await context.clearCookies();
- //Because cookies should be cleared before opening the application.
-await page.goto("/"); 
+  await context.clearCookies();
+  //Because cookies should be cleared before opening the application.
+  await page.goto("/");
 });
 
 test.afterEach(async ({ page }, testInfo) => {
@@ -25,5 +26,5 @@ test.afterEach(async ({ page }, testInfo) => {
 
 test.afterAll(async () => {
   //Runs once after the suite.
-  console.log("Suite ended");
+  logger("Suite ended");
 });
