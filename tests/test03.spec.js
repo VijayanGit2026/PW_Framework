@@ -6,6 +6,7 @@ import userData from "../testData/user.json" with { type: "json" };
 import "../Hooks/hooks.js";
 import { logger } from "../utils/loggerUtils";
 
+
 test("Login, Add Product and Complete Checkout", async ({
   page,
   loginPage,
@@ -135,7 +136,7 @@ test("Login, Add Product and Complete Checkout", async ({
 
   expect(fileName).toMatch(/\.pdf$/i);
 
-  logger("PDF downloaded successfully:");
+  logger("TEST END: PDF downloaded successfully");
 
   logger(downloadPath);
 });
