@@ -17,7 +17,10 @@ export default defineConfig({
   workers: 2,
 
   // HTML report
-  reporter: "html",
+  reporter: [
+    ["html"],
+    ["list"],
+    ["allure-playwright"]],
 
   // Common settings for all tests
   use: {
