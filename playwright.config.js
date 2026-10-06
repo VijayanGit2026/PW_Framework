@@ -17,10 +17,7 @@ export default defineConfig({
   workers: 2,
 
   // HTML report
-  reporter: [
-    ["html"],
-    ["list"],
-    ["allure-playwright"]],
+  reporter: [["html"], ["list"], ["allure-playwright"]],
 
   // Common settings for all tests
   use: {
@@ -33,6 +30,9 @@ export default defineConfig({
     video: "retain-on-failure",
 
     // Slow down browser actions
+
+    viewport: null,
+
     launchOptions: {
       slowMo: 1500,
       args: ["--start-full-screen"],

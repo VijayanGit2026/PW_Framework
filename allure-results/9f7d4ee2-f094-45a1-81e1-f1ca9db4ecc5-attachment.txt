@@ -1,0 +1,5 @@
+04/10/2026 12:30:02 : Suite started
+04/10/2026 12:30:07 : TEST START: Login, Add Product and Complete Checkout
+04/10/2026 12:30:27 : TEST END: PDF downloaded successfully
+04/10/2026 12:30:27 : C:\Users\P Vijayan\Downloads\swag-labs-order-2026-10-04_07-00-23.pdf
+04/10/2026 12:30:27 : Suite ended

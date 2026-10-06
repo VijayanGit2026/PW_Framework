@@ -1,0 +1,1 @@
+{"attachments":[],"errors":[{"message":"afterEach hook failed: Error: page.screenshot: Target page, context or browser has been closed","trace":"Error: page.screenshot: Target page, context or browser has been closed\n    at C:\\Users\\P Vijayan\\OneDrive\\Desktop\\HireNEXA\\PW_Framework\\Hooks\\hooks.js:20:16","timestamp":1791031518146}]}
