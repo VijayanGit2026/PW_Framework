@@ -8,7 +8,7 @@ export class BaseClass {
 
     async enterText(element, value) {
         await waitForElement(element);
-        await element.fill(value);
+        await element.fill(valsue);
     }
 
     async clickIt(element) {
